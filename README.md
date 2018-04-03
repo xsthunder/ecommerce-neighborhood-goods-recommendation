@@ -21,8 +21,8 @@ git clone <this repo>
 cd <repo>
 npm i
 npm test
-[open it on local](http://localhost:8080)
 ```
+[open it on local](http://localhost:8080)
 
 ## view struct
 
@@ -63,3 +63,8 @@ others ( view doesn't need sidenav and toolbar )
     │           └── home.html
     └── index.html
 ```
+
+## reference
+[https://angularjs.org/](https://angularjs.org/)
+[https://material.angularjs.org/](https://material.angularjs.org/)
+[https://ui-router.github.io/tutorials/](https://ui-router.github.io/tutorials/)
