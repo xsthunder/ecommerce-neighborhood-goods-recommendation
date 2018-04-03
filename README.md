@@ -16,11 +16,13 @@ it has
 
 ## installation
 
-1. git clone <this repo>
-2. cd <repo>
-3. npm i
-4. npm test
-5. [open it](http://localhost:8080);
+```
+git clone <this repo>
+cd <repo>
+npm i
+npm test
+[open it on local](http://localhost:8080)
+```
 
 ## view struct
 
@@ -40,9 +42,9 @@ others ( view doesn't need sidenav and toolbar )
 ├── package-lock.json
 └── public
     ├── app
-    │   ├── app.module.js
-    │   ├── app.route.js
-    │   ├── configure.js
+    │   ├── app.module.js // init this app
+    │   ├── app.route.js // init routers from ROUTER_CONSTANT
+    │   ├── configure.js // app configure, base url used by urlConstant
     │   ├── service
     │   │   ├── ROUTER_CONSTANT.js //router configure
     │   │   ├── urlConstant.js // http method configure
