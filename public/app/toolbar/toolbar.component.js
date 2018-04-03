@@ -4,8 +4,8 @@
             templateUrl:'./app/toolbar/toolbar.html',
             controller:fn
         })
-    function fn($scope,$mdSidenav,$timeout) {
-        $scope.title = 'Dilitter';
+    function fn($scope,$mdSidenav,$timeout,APP_CONFIGURE) {
+        $scope.title = APP_CONFIGURE.title;
         $scope.toggleLeft = buildDelayedToggler('left');
         function debounce(func, wait, context) {
             var timer;

@@ -13,11 +13,14 @@
         server = 'localhost';
     }
     var tmp = {
-        enableHttps:enableHttps,
-        server:server,
-        serverPort:serverPort,
-        base_url:"http://"+enableHttps?"s":""+":"+serverPort
+        serverOption:{
+            enableHttps:enableHttps,
+            server:server,
+            serverPort:serverPort
+        },
+        base_url:("http" + (enableHttps?"s":"") +"://"+server + ':' + serverPort),
+        title:'angular-material-build-template'
     };
     angular.module('app')
-        .constant('appConfigure',tmp);
+        .constant('APP_CONFIGURE',tmp);
 })();

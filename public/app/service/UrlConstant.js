@@ -5,18 +5,10 @@
 "use strict";
 (function () {
     angular.module('app')
-        .factory('urlConstant', fn);
-    function fn($http,$mdToast,appConfigure) {
+        .factory('UrlConstant', fn);
+    function fn($http,$mdToast,APP_CONFIGURE) {
         var self = {};
         var base_url = appConfigure.base_url;
-        self.notice = function (msg) {
-            msg = msg || "something wrong";
-            $mdToast.show(
-                $mdToast.simple()
-                    .textContent(msg)
-                    .hideDelay(3000)
-            );
-        };
         self.post = function (url, obj, cb) {
             var pl = new FormData();
             for (var i in obj) {

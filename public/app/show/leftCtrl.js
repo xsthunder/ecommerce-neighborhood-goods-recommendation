@@ -2,7 +2,7 @@
         angular.module('app')
             .controller('leftCtrl', fn);
 
-        function fn($scope, $timeout, $mdSidenav, $state, userService) {
+        function fn($scope, $timeout, $mdSidenav, $state) {
             $scope.close = function () {
                 // Component lookup should always be available since we are not using `ng-if`
                 $mdSidenav('left').close()
@@ -19,10 +19,6 @@
                     alias: 'Home'
                 }
             ];
-            $scope.personInfo = function () {
-                userService.personInfo();
-                $scope.close();
-            }
         }
     }
 )();

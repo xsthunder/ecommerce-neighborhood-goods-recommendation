@@ -5,9 +5,8 @@
 "use strict";
 (function () {
     angular.module('app')
-        .factory('userService',fn);
-
-    function fn($cookies) {
+        .factory('UserService',fn);
+    function fn() {
         var self = {};
 
         return self;

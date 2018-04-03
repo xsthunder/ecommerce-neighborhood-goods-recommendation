@@ -44,23 +44,23 @@ others ( view doesn't need sidenav and toolbar )
     ├── app
     │   ├── app.module.js // init this app
     │   ├── app.route.js // init routers from ROUTER_CONSTANT
-    │   ├── configure.js // app configure, base url used by urlConstant
+    │   ├── APP_CONFIGURE.js // app configure, base_url used by urlConstant
     │   ├── service
     │   │   ├── ROUTER_CONSTANT.js //router configure
-    │   │   ├── urlConstant.js // http method configure
-    │   │   └── userService.js //user infomation keeped by this factory 
+    │   │   ├── UrlConstant.js // http method configure
+    │   │   ├── Util.js // utility
+    │   │   └── UserService.js //user infomation keeped by this factory or and wrap post/get work as top factory
     │   ├── show //sidenav
+    │   │    └── home
+    │   │        ├── home.component.js
+    │   │        ├── home.factory.js
+    │   │        └── home.html
     │   │   ├── leftCtrl.js
     │   │   ├── show.component.js
     │   │   └── show.html
-    │   ├── toolbar 
-    │   │   ├── toolbar.component.js
-    │   │   └── toolbar.html
-    │   └── user
-    │       └── home
-    │           ├── home.component.js
-    │           ├── home.factory.js
-    │           └── home.html
+    │   └── toolbar 
+    │       ├── toolbar.component.js
+    │       └── toolbar.html
     └── index.html
 ```
 

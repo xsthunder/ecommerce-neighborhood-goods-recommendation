@@ -4,7 +4,7 @@
             templateUrl:'./app/show/show.html',
             controller:fn
         });
-    function fn($scope,$timeout) {
+    function fn() {
 
     }
 })();
