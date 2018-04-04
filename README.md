@@ -8,11 +8,21 @@ it has
 * material design by material-angularjs
 * cookies by angular-cookies
 * web host by express on 8080
+* nested express support
+e.g
+```javascript
+const app = require('express')();
+app.use('/yourpath', require('./angularjs-material-build-template'));
+const port = 8888;
+app.listen(port);
+console.log(`app listen in ${port}`);
+```
 
 ## technical infomation
 
 1. post method use form-data 
 2. use npm
+3. use relative path e.g. `./app/show/home/home.html`
 
 ## installation
 
@@ -65,6 +75,9 @@ others ( view doesn't need sidenav and toolbar )
 ```
 
 ## reference
+
 [https://angularjs.org/](https://angularjs.org/)
+
 [https://material.angularjs.org/](https://material.angularjs.org/)
+
 [https://ui-router.github.io/tutorials/](https://ui-router.github.io/tutorials/)

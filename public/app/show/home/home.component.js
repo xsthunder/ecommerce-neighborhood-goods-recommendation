@@ -1,7 +1,7 @@
 (function () {
     angular.module('app')
         .component('xxHome', {
-            templateUrl: '/app/show/home/home.html',
+            templateUrl: './app/show/home/home.html',
             controller: ctrl
         });
 
