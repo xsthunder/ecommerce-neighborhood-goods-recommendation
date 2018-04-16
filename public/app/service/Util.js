@@ -6,7 +6,7 @@
 (function () {
     angular.module('app')
         .factory('Util',tmp);
-    function tmp($cookies) {
+    function tmp($cookies,$stateParams) {
         var self = {};
         self.notice = function (msg) {
             msg = msg || "something wrong";
@@ -16,6 +16,9 @@
                     .hideDelay(3000)
             );
         };
+				self.getStateParams = function(key){
+					return $stateParams[key];
+				}
         return self;
     }
 })();

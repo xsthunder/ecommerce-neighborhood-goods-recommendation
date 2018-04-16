@@ -23,6 +23,21 @@ console.log(`app listen in ${port}`);
 1. post method use form-data 
 2. use npm
 3. use relative path e.g. `./app/show/home/home.html`
+4. use soft link to node_modules to save space
+4. component based
+5. router based key-value storage stored in $stateParams
+e.g.
+```
+// in ROUTER_CONSTANT
+{
+            name: 'user.person-info',
+            url: '/user/person-info/{userName}',
+            component: 'xxPersonInfo'
+}
+// getting value
+Util.getStateParams(userName);
+```
+
 
 ## installation
 

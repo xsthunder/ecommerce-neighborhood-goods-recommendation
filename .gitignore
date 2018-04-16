@@ -1,6 +1,11 @@
-# library
+# my ignore
 node_modules/
 .idea/
+start.cmd
+
+
+
+
 # Logs
 logs
 *.log

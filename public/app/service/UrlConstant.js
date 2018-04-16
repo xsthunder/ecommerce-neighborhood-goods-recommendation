@@ -15,7 +15,7 @@
                 pl.append(i, obj[i]);
             }
             $http({
-                url: base_url + '/' + url,
+                url: base_url + url,
                 method: 'POST',
                 data: pl,
                 headers: {'Content-Type': undefined}
