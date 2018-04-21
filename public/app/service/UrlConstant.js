@@ -8,7 +8,7 @@
         .factory('UrlConstant', fn);
     function fn($http,$mdToast,APP_CONFIGURE) {
         var self = {};
-        var base_url = appConfigure.base_url;
+        var base_url = APP_CONFIGURE.base_url;
         self.post = function (url, obj, cb) {
             var pl = new FormData();
             for (var i in obj) {
