@@ -10,7 +10,8 @@ it has
 * web host by express on 8080
 * nested express support
 * ngAnimate
-e.g
+
+nested express app e.g
 ```javascript
 const app = require('express')();
 app.use('/yourpath', require('./angularjs-material-build-template'));
