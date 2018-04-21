@@ -1,3 +1,3 @@
 (function(){
-    angular.module('app',['ngMaterial', 'ngMessages', 'ui.router','ngCookies'])
+    angular.module('app',['ngMaterial', 'ngMessages', 'ui.router','ngCookies', 'ngAnimate'])
 })();

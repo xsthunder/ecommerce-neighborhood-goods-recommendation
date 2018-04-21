@@ -5,7 +5,7 @@ app.use( express.static(`${__dirname}/node_modules`) );
 app.use( express.static(`${__dirname}/public`) );
 
 if(!module.parent){
-    const port = 8080;
+    const port = 8081;
     console.log(`app listening on ${port}`);
     app.listen(port);
 }
