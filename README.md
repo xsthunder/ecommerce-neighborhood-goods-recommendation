@@ -9,6 +9,7 @@ it has
 * cookies by angular-cookies
 * web host by express on 8080
 * nested express support
+* ngAnimate
 e.g
 ```javascript
 const app = require('express')();
