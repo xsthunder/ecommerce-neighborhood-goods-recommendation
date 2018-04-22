@@ -7,7 +7,7 @@ it has
 * basic router by ui-router
 * material design by material-angularjs
 * cookies by angular-cookies
-* web host by express on 8080
+* web host by express on 8081
 * nested express support
 * ngAnimate
 
@@ -49,7 +49,7 @@ cd <repo>
 npm i
 npm test
 ```
-[open it on local](http://localhost:8080)
+[open it on local](http://localhost:8081)
 
 ## view struct
 

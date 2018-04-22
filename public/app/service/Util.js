@@ -19,6 +19,13 @@
 				self.getStateParams = function(key){
 					return $stateParams[key];
 				}
+			  self.makeRes = function(res,msg,err){
+				  return {
+						msg:msg,
+						res:res,
+						err:err?err:0
+					};
+				}
         return self;
     }
 })();

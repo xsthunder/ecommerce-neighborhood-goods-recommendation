@@ -4,6 +4,9 @@
  */
 "use strict";
 (function () {
+
+		var enableMockHttp = true;
+
     var enableLocalServer = true;
     var enableHttps = false;
 
