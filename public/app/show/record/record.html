@@ -1,0 +1,17 @@
+<md-content ng-init="keyList = ['id','age','income','credit','buyFrequency','buy']">
+	<md-content layout-padding>
+		<table border="1">
+			<tr>
+				<th>Customer Id</th>
+				<th>Age</th>
+				<th>Income</th>
+				<th>Credit</th>
+				<th>Buy Frequency</th>
+				<th>buy</th>
+			</tr>
+			<tr ng-repeat="record in records" >
+				<td ng-repeat="key in keyList">{{record[key]}}</td>
+			<tr>
+		</table>
+	</md-content>
+</md-content>
