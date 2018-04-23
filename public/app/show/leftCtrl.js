@@ -17,7 +17,10 @@
                 {
                     name: 'show.home',
                     alias: 'Home'
-                }
+                },{
+									  name: 'show.goods',
+									  alias:'All goods'
+								}
             ];
         }
     }

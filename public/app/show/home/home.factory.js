@@ -1,11 +1,28 @@
 (function(){
 	angular.module('app')
 		.factory('HomeFactory',fn);
-	function fn(UrlConstant){
+	function fn(APP_CONFIGURE,Util,MockHttp,UrlConstant){
 		var self = {};
-        //self.getConsultantIntroduce = function (name) {
-        //    $state.go('admin-consultant/user/{{username}}', {"userName": name || self.name});
-        //};
+		var mock = APP_CONFIGURE.enableMockHttp;
+		self.getRecords = function(){
+			if( mock ){
+				return Util.makeRes(MockHttp.records)['res'];
+			}
+			alert();
+		}
+		self.postRecord = function(body){
+			if( mock ){
+				MockHttp.records.push( body );
+				return;
+			}
+			alert();
+		}
+		self.getGoods = function(){
+			if( mock ){
+				return Util.makeRes(MockHttp.goods)['res'];
+			}
+			alert();
+		}
 		return self;
 	}
 })();

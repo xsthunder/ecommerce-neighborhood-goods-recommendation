@@ -1,0 +1,28 @@
+
+<md-content layout-fill>
+				<md-card ng-repeat="item in goods.slice(1)" >
+					<img ng-src="{{item.imgPath}}" class="md-card-image" alt="Washed Out">
+					<md-card-title>
+						<md-card-title-text>
+							<span class="md-headline">{{item.name}}</span>
+						</md-card-title-text>
+					</md-card-title>
+					<md-card-content>
+						<p>
+						{{item.content}}
+						</p>
+					</md-card-content>
+					<md-card-actions layout="row" layout-align="end center">
+						<md-button class="md-icon-button" aria-label="Favorite">
+							<md-icon >favorite</md-icon>
+						</md-button>
+						<md-button class="md-icon-button" aria-label="Settings">
+							<md-icon >menu</md-icon>
+						</md-button>
+						<md-button class="md-icon-button" aria-label="Share">
+							<md-icon >share-arrow</md-icon>
+						</md-button>
+					</md-card-actions>
+				</md-card>
+</md-content>
+

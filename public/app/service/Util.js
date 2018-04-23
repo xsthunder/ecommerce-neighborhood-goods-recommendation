@@ -26,6 +26,14 @@
 						err:err?err:0
 					};
 				}
+			  self.max = function( o1, o2 ){
+					if( o1 > o2 ) return o1;
+					else return o2;
+				}
+			  self.abs = function( o1 ){
+					if( o1 < 0 ) return -o1;
+					else return o1;
+				}
         return self;
     }
 })();

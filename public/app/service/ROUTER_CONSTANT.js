@@ -8,7 +8,11 @@
             name: 'show.home',
             url: '/home',
             component: 'xxHome'
-        },
+        },{
+            name: 'show.goods',
+            url: '/goods',
+            component: 'xxGoods'
+				},
         {
             name: "otherwise",
             url: "*path",

@@ -1,69 +1,56 @@
-<md-content layout-fill>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
-    home<br/>
+<md-content layout-fill >
+	<md-content layout-padding>
+		<md-input-container>
+			<label>age</label>
+			<input ng-model="user.age" >
+		</md-input-container>
+		<md-input-container>
+			<label>credit</label>
+			<input ng-model="user.credit" >
+		</md-input-container>
+		<md-input-container>
+			<label>buy frequency</label>
+			<input ng-model="user.buyFrequency" >
+		</md-input-container>
+			<md-input-container>
+				<label>income</label>
+				<input ng-model="user.income">
+			</md-input-container>
+			<md-button class="md-raised" ng-click="getRecommendations(user)">Button</md-button>
+	</md-content>
+	<md-card ng-repeat="item in recommendations">
+		<img ng-src="{{goods[item.buy].imgPath}}" class="md-card-image" alt="Washed Out">
+		<md-card-title>
+			<md-card-title-text>
+				<span class="md-headline">{{goods[item.buy].name}}</span>
+			</md-card-title-text>
+		</md-card-title>
+		<md-card-content>
+			<p class="distance">
+			distance:{{item.distance}}
+			</p>
+			<p>
+			{{goods[item.buy].content}}
+			</p>
+		</md-card-content>
+		<md-card-actions layout="row" layout-align="end center">
+			<md-button class="md-icon-button" aria-label="Favorite">
+				<md-icon >favorite</md-icon>
+			</md-button>
+			<md-button class="md-icon-button" aria-label="Settings">
+				<md-icon >menu</md-icon>
+			</md-button>
+			<md-button class="md-icon-button" aria-label="Share">
+				<md-icon >share-arrow</md-icon>
+			</md-button>
+		</md-card-actions>
+	</md-card>
+	<!---recommendation not found --->
+	<md-content ng-show="recommendations.length==0">
+		<p>
+		   No suitable goods for you ;(
+			 </br>
+			 You may see <a ui-sref="show.goods">all goods</a>
+		</p>
+	</md-content>
 </md-content>
